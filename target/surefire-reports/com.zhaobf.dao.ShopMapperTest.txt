@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.zhaobf.dao.ShopMapperTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in com.zhaobf.dao.ShopMapperTest
+initializationError(com.zhaobf.dao.ShopMapperTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

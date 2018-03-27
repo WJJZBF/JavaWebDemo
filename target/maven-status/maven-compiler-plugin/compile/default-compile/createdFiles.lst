@@ -1,0 +1,5 @@
+com/zhaobf/model/Goods.class
+com/zhaobf/model/Shop.class
+com/zhaobf/dao/GoodsMapper.class
+com/zhaobf/dao/ShopMapper.class
+com/zhaobf/springbootmybatis/SpringbootMybatisApplication.class
