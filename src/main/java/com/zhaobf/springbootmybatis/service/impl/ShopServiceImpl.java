@@ -19,7 +19,13 @@ public class ShopServiceImpl implements ShopService {
         shop.setName(name);
         shop.setCreateTime(new Date());
         shop.setUpdateTime(new Date());
-        int insert = shopMapper.insert(shop);
+        int rows = shopMapper.insert(shop);
         return shop;
+    }
+
+    @Override
+    public void delete(Integer id) {
+      int rows=shopMapper.deleteByPrimaryKey(id);
+      System.out.println("受影响的行数"+rows);
     }
 }

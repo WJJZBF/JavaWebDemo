@@ -9,15 +9,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.*;
 
-public class ShopServiceImplTest  extends SpringbootMybatisApplicationTests{
+public class ShopServiceImplTest extends SpringbootMybatisApplicationTests {
     @Autowired
     ShopService shopService;
+
     @Test
-    public void add()   {
-        Shop shop = shopService.add("沃尔马1");
+    public void add() {
+        Shop shop = shopService.add("沃尔马5");
 
         System.out.println(JSON.toJSONString(shop));
 
+    }
+    @Test
+    public void delete(){
+        shopService.delete(8);
     }
 
 }
