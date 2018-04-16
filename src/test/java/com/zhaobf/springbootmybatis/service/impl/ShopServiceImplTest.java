@@ -7,6 +7,8 @@ import com.zhaobf.springbootmybatis.service.ShopService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class ShopServiceImplTest extends SpringbootMybatisApplicationTests {
@@ -20,9 +22,16 @@ public class ShopServiceImplTest extends SpringbootMybatisApplicationTests {
         System.out.println(JSON.toJSONString(shop));
 
     }
+
     @Test
-    public void delete(){
+    public void delete() {
         shopService.delete(8);
     }
+
+//    @Test
+//    public void getAll() {
+//        List<Shop> all = shopService.getAll();
+//        System.out.println(JSON.toJSONString(all));
+//    }
 
 }

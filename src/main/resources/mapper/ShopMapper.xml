@@ -16,6 +16,18 @@
     from shop
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from shop
+  </select>
+
+  <!--<select id="getAll"   resultMap="BaseResultMap">-->
+    <!--select-->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from shop-->
+  <!--</select>-->
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from shop
     where id = #{id,jdbcType=INTEGER}

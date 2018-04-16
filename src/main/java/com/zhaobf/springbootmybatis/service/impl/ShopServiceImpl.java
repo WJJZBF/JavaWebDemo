@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class ShopServiceImpl implements ShopService {
@@ -25,7 +26,19 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     public void delete(Integer id) {
-      int rows=shopMapper.deleteByPrimaryKey(id);
-      System.out.println("受影响的行数"+rows);
+        int rows = shopMapper.deleteByPrimaryKey(id);
+        System.out.println("受影响的行数" + rows);
     }
+
+    @Override
+    public List<Shop> getAll() {
+        return shopMapper.getAll();
+    }
+
+//    @Override
+//    public List<Shop> getAll() {
+//        return shopMapper.getAll();
+//    }
+
+
 }
