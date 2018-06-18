@@ -1,14 +1,13 @@
 package com.zhaobf.springbootmybatis.dao;
 
 import com.zhaobf.springbootmybatis.model.Shop;
-import com.zhaobf.springbootmybatis.SpringbootMybatisApplicationTests;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 
-public class ShopMapperTest extends SpringbootMybatisApplicationTests {
+public class ShopMapperTest {
 
     @Autowired
     ShopMapper shopMapper;

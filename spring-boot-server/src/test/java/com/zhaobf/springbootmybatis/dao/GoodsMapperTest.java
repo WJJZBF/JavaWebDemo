@@ -1,10 +1,9 @@
 package com.zhaobf.springbootmybatis.dao;
 
 import com.zhaobf.springbootmybatis.model.Goods;
-import com.zhaobf.springbootmybatis.SpringbootMybatisApplicationTests;
 import org.junit.Test;
 
-public class GoodsMapperTest  extends SpringbootMybatisApplicationTests{
+public class GoodsMapperTest{
     @Test
     public void insert() throws Exception {
         Goods goods = new Goods();

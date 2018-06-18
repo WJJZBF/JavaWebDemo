@@ -1,17 +1,12 @@
 package com.zhaobf.springbootmybatis.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.zhaobf.springbootmybatis.SpringbootMybatisApplicationTests;
 import com.zhaobf.springbootmybatis.model.Shop;
 import com.zhaobf.springbootmybatis.service.ShopService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
-
-import static org.junit.Assert.*;
-
-public class ShopServiceImplTest extends SpringbootMybatisApplicationTests {
+public class ShopServiceImplTest {
     @Autowired
     ShopService shopService;
 

@@ -1,7 +1,5 @@
 package arithmetic;
 
-import aaa.StaticTests;
-
 ;
 
 /**
